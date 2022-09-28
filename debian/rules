@@ -1,0 +1,12 @@
+#!/usr/bin/make -f
+
+export PYBUILD_NAME=aiohttp-cors
+export PYBUILD_TEST_PYTEST=1
+export PYBUILD_TEST_ARGS=-k-tests/integration/test_real_browser.py
+
+%:
+	dh $@ --with python3 --buildsystem=pybuild
+
+
+# Disable unreliable tests
+override_dh_auto_test:

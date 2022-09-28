@@ -1,0 +1,52 @@
+aiohttp-cors (0.7.0-2) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Use debhelper-compat instead of debian/compat.
+  * d/control: Remove ancient X-Python3-Version field.
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 11 to 12.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+  [ Sandro Tosi ]
+  * Use the new Debian Python Team contact name and address
+
+ -- Sandro Tosi <morph@debian.org>  Thu, 16 Sep 2021 23:54:57 -0400
+
+aiohttp-cors (0.7.0-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream release
+
+  [ Ondřej Nový ]
+  * d/control: Set Vcs-* to salsa.debian.org
+  * Convert git repository from git-dpm to gbp layout
+
+  [ Ruben Undheim ]
+  * DH level 11
+  * debian/control:
+    - New standards version 4.2.1 - no changes
+  * debian/copyright: Updated copyright info
+  * debian/gbp.conf: Enable pristine-tar build
+  * debian/rules:
+    - Disable unreliable tests (Closes: #887529)
+
+ -- Ruben Undheim <ruben.undheim@gmail.com>  Fri, 21 Dec 2018 13:01:23 +0100
+
+aiohttp-cors (0.5.3-1) unstable; urgency=medium
+
+  * New upstream release
+  * Standards-Version bumped 4.0.0
+  * Vcs-Git URL set
+  * Uploaders set to DMPT
+
+ -- Brandon Weeks <bweeks@google.com>  Mon, 24 Jul 2017 00:56:18 -0700
+
+aiohttp-cors (0.5.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #855498)
+
+ -- Brandon Weeks <bweeks@google.com>  Sun, 19 Feb 2017 07:49:52 +0000

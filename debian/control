@@ -1,0 +1,27 @@
+Source: aiohttp-cors
+Section: python
+Priority: optional
+Maintainer: Brandon Weeks <bweeks@google.com>
+Uploaders: Debian Python Team <team+python@tracker.debian.org>
+Build-Depends:
+  debhelper-compat (= 12),
+  dh-python,
+  python3,
+  python3-aiohttp,
+  python3-pytest,
+  python3-selenium,
+  python3-setuptools
+Standards-Version: 4.2.1
+Homepage: https://github.com/aio-libs/aiohttp-cors
+Vcs-Git: https://salsa.debian.org/python-team/packages/aiohttp-cors.git
+Vcs-Browser: https://salsa.debian.org/python-team/packages/aiohttp-cors
+Testsuite: autopkgtest-pkg-python
+
+Package: python3-aiohttp-cors
+Architecture: all
+Depends:
+  ${python3:Depends},
+  ${misc:Depends}
+Description: Cross Origin Resource Sharing (CORS) support for aiohttp
+ aiohttp_cors library implements Cross Origin Resource Sharing (CORS) support
+ for aiohttp asyncio-powered asynchronous HTTP server.
